@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"></div>
+  <nav>
+    <button id="themeToggle">Change Theme</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>The Perfect Trade</h1>
+  <p>Select the conditions that are present in each timeframe</p>
+</section>
+
+<!-- DAILY -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>DAILY</h2>
+      <span class="sub">Confluence</span>
+    </div>
+    <div class="score" id="weeklyScore">0%</div>
+  </div>
+
+  <div class="row">
+    <span>Trend__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="weekly" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[TJl-1/2]________[DT/DB]__(7%)</span>
+    <label class="switch">
+      <input type="checkbox" class="weekly" data-score="7">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[RBS/SRB]________[QML]__(8%)</span>
+    <label class="switch">
+      <input type="checkbox" class="weekly" data-score="8">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+<!-- H4 -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>H4</h2>
+      <span class="sub">Confluence</span>
+    </div>
+    <div class="score" id="dailyScore">0%</div>
+  </div>
+
+  <div class="row">
+    <span>Trend__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="daily" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[TJl-1/2]________[DT/DB]__(7%)</span>
+    <label class="switch">
+      <input type="checkbox" class="daily" data-score="7">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[QML]________[SBR/RBS]__(8%)</span>
+    <label class="switch">
+      <input type="checkbox" class="daily" data-score="8">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+<!-- H1 -->
+ 
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>H1</h2>
+      <span class="sub">Confluence</span>
+    </div>
+    <div class="score" id="h4Score">0%</div>
+  </div>
+
+  <div class="row">
+    <span>Trend__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="h4" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[TJl-1/2]________[DT/DB]__(5%)</span>
+    <label class="switch">
+      <input type="checkbox" class="h4" data-score="5">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[QML]________[SBR/RBS]__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="h4" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- CONFIRMATION BUTTON for H1 -->
+  <div class="row">
+    <button id="confirmBtnH1" class="confirmation-btn">Confirmation</button>
+  </div>
+
+  <!-- CONFIRMATION OPTIONS for H1 -->
+  <div class="confirmation-options" id="confirmationH1">
+    <div class="row">
+      <span>ISS (+3%)</span>
+      <label class="switch">
+        <input type="checkbox" class="h4" data-score="3">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>COCH (+8%)</span>
+      <label class="switch">
+        <input type="checkbox" class="h4" data-score="8">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>CANDLESTICK (+2%)</span>
+      <label class="switch">
+        <input type="checkbox" class="h4" data-score="2">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>FIB (+7%)</span>
+      <label class="switch">
+        <input type="checkbox" class="h4" data-score="7">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+
+<!-- M15 -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>M15</h2>
+      <span class="sub">Confluence</span>
+    </div>
+    <div class="score" id="lScore">0%</div>
+  </div>
+
+  <div class="row">
+    <span>[TJl-1/2]________[DT/DB]__(5%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="5">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[QML]________[SBR/RBS]__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- CONFIRMATION BUTTON -->
+  <div class="row">
+    <button id="confirmBtn" class="confirmation-btn">Confirmation</button>
+  </div>
+
+  <!-- CONFIRMATION OPTIONS for M15 -->
+<div class="confirmation-options" id="confirmationM15">
+  <div class="row">
+    <span>ISS (+3%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="3">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="row">
+    <span>COCH (+8%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="8">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="row">
+    <span>CANDLESTICK (+2%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="2">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="row">
+    <span>FIB (+7%)</span>
+    <label class="switch">
+      <input type="checkbox" class="lower" data-score="7">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+</div>
+
+<!-- M5 / M1 -->
+<!-- M5 / M1 -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>M5 / M1</h2>
+      <span class="sub">Entry Precision</span>
+    </div>
+    <div class="score" id="m5Score">0%</div>
+  </div>
+
+  <div class="row">
+    <span>[TJl-1/2]________[DT/DB]__(5%)</span>
+    <label class="switch">
+      <input type="checkbox" class="m5m1" data-score="5">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>[QML]________[SBR/RBS]__(10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="m5m1" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  
+
+  <!-- CONFIRMATION BUTTON for M5/M1 -->
+  <div class="row">
+    <button id="confirmBtnM5" class="confirmation-btn">Confirmation</button>
+  </div>
+
+  <!-- CONFIRMATION OPTIONS for M5/M1 -->
+  <div class="confirmation-options" id="confirmationM5">
+    <div class="row">
+      <span>ISS (+3%)</span>
+      <label class="switch">
+        <input type="checkbox" class="m5m1" data-score="3">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>COCH (+8%)</span>
+      <label class="switch">
+        <input type="checkbox" class="m5m1" data-score="8">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>CANDLESTICK (+2%)</span>
+      <label class="switch">
+        <input type="checkbox" class="m5m1" data-score="2">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <span>FIB (+7%)</span>
+      <label class="switch">
+        <input type="checkbox" class="m5m1" data-score="7">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+</div>
+<!-- SESSION TIMING -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h2>SESSION TIMING</h2>
+      <span class="sub">Market Session</span>
+    </div>
+    <div class="score" id="sessionScore">0%</div>
+  </div>
+
+  <div class="row">
+    <span>London Session (+10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="session" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <span>New York Session (+10%)</span>
+    <label class="switch">
+      <input type="checkbox" class="session" data-score="10">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <h3>Discipline Check</h3>
+    <div class="score" id="disciplineScore">0%</div>
+  </div>
+
+  <div class="row">
+    <span>Trading with the trend?</span>
+    <div>
+      <input type="radio" name="q1" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q1" class="discipline" data-score="0"> No
+    </div>
+  </div>
+
+  <div class="row">
+    <span>Best setup of the week?</span>
+    <div>
+      <input type="radio" name="q2" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q2" class="discipline" data-score="0"> No
+    </div>
+  </div>
+
+  <div class="row">
+    <span>Clear headspace?</span>
+    <div>
+      <input type="radio" name="q3" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q3" class="discipline" data-score="0"> No
+    </div>
+  </div>
+
+  <div class="row">
+    <span>Trade fits the plan?</span>
+    <div>
+      <input type="radio" name="q4" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q4" class="discipline" data-score="0"> No
+    </div>
+  </div>
+
+  <div class="row">
+    <span>Correct risk management?</span>
+    <div>
+      <input type="radio" name="q5" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q5" class="discipline" data-score="0"> No
+    </div>
+  </div>
+
+  <div class="row">
+    <span>SL & TP clearly visible?</span>
+    <div>
+      <input type="radio" name="q6" class="discipline" data-score="5"> Yes
+      <input type="radio" name="q6" class="discipline" data-score="0"> No
+    </div>
+  </div>
+</div>
+
+<!-- CONFLUENCE SUMMARY -->
+<div class="card">
+  <h2 class="center">Confluence Summary</h2>
+
+  <div class="summary-grid">
+    <div class="summary-box">DAILY<br><span id="wSum">0%</span></div>
+    <div class="summary-box">H4<br><span id="dSum">0%</span></div>
+    <div class="summary-box">H1<br><span id="h4Sum">0%</span></div>
+    <div class="summary-box">M15<br><span id="lSum">0%</span></div>
+    <div class="summary-box">M5 / M1<br><span id="eSum">0%</span></div>
+    <div class="summary-box">SESSION TIMING<br><span id="ssum">0%</span></div>
+    <div class="summary-box">Discipline Check<br><span id="disciplineSum">0%</span></div>
+
+  </div>
+
+  <div class="total-box">
+    <h3>TOTAL OVERALL SCORE</h3>
+    <div id="overallScore">0%</div>
+    <p id="verdict">0% – No Setup</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

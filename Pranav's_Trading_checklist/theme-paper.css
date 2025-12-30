@@ -1,0 +1,38 @@
+/* ===== THEME: PAPER & INK ===== */
+
+body {
+  background: #fafafa;
+  color: #111827;
+  font-family: "Georgia", serif;
+}
+
+.navbar,
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-box {
+  background: #f9fafb;
+}
+
+.slider {
+  background: #d1d5db;
+}
+
+input:checked + .slider {
+  background: #111827;
+}
+
+.score,
+.summary-box span {
+  color: #111827;
+}
+
+#overallScore {
+  color: #7c2d12;
+}
+
+.total-box {
+  background: #f3f4f6;
+}

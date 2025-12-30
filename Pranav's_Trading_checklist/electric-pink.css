@@ -1,0 +1,35 @@
+/* ===== THEME: ELECTRIC PINK ===== */
+body {
+  background: linear-gradient(135deg, #ff1493, #ff69b4);
+  color: #fff0f5;
+}
+
+.navbar,
+.card {
+  background: rgba(255, 20, 147, 0.85);
+}
+
+.summary-box {
+  background: rgba(255, 105, 180, 0.85);
+}
+
+.slider {
+  background: #ff69b4;
+}
+
+input:checked + .slider {
+  background: #ff1493;
+}
+
+.score,
+.summary-box span {
+  color: #fff0f5;
+}
+
+#overallScore {
+  color: #ffff00;
+}
+
+.total-box {
+  background: linear-gradient(135deg, #ff1493, #ff69b4);
+}

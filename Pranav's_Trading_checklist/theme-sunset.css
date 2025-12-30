@@ -1,0 +1,36 @@
+/* ===== THEME: SUNSET GLOW ===== */
+
+body {
+  background: #fff7ed;
+  color: #7c2d12;
+}
+
+.navbar,
+.card {
+  background: #fed7aa;
+}
+
+.summary-box {
+  background: #ffe8d6;
+}
+
+.slider {
+  background: #fcd34d;
+}
+
+input:checked + .slider {
+  background: #f87171;
+}
+
+.score,
+.summary-box span {
+  color: #f97316;
+}
+
+#overallScore {
+  color: #dc2626;
+}
+
+.total-box {
+  background: linear-gradient(135deg, #fcd34d, #fb923c);
+}
