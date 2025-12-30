@@ -1,0 +1,35 @@
+/* ===== THEME: MIDNIGHT VIOLET =====*/
+body {
+  background: linear-gradient(135deg, #1e0f3b, #3b0f5f);
+  color: #e0d7f7;
+}
+
+.navbar,
+.card {
+  background: rgba(40, 0, 60, 0.85);
+}
+
+.summary-box {
+  background: rgba(60, 0, 80, 0.85);
+}
+
+.slider {
+  background: #6b21a8;
+}
+
+input:checked + .slider {
+  background: #c084fc;
+}
+
+.score,
+.summary-box span {
+  color: #c084fc;
+}
+
+#overallScore {
+  color: #f472b6;
+}
+
+.total-box {
+  background: linear-gradient(135deg, #3b0f5f, #6b21a8);
+}

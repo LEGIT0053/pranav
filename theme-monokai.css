@@ -1,0 +1,36 @@
+/* ===== THEME: MONOKAI MINIMAL ===== */
+
+body {
+  background: #272822;
+  color: #f8f8f2;
+}
+
+.navbar,
+.card {
+  background: #3e3d32;
+}
+
+.summary-box {
+  background: #49483e;
+}
+
+.slider {
+  background: #75715e;
+}
+
+input:checked + .slider {
+  background: #f92672;
+}
+
+.score,
+.summary-box span {
+  color: #a6e22e;
+}
+
+#overallScore {
+  color: #fd971f;
+}
+
+.total-box {
+  background: linear-gradient(135deg, #49483e, #75715e);
+}
